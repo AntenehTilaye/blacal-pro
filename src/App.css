@@ -1,38 +1,68 @@
 .App {
   text-align: center;
+  margin: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h3 {
+  font-size: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.cal-input {
+  background-color: rgba(212, 117, 212, 0.452);
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 15px 20px;
+  padding-top: 0px;
+  border: none;
+  border-radius: 1px;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.cal-result {
+  background-color: rgba(212, 117, 212, 0.452);
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 15px 20px;
+  padding-bottom: 0px;
+  border: none;
+  border-radius: 1px;
+  text-align: right;
+}
+
+.buttons_holder {
+  width: 400px;
+  min-height: 500px;
+  margin-top: 10%;
+  display: inline-block;
+  background-color: rgb(140, 80, 196);
   color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+.buttons {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttons button {
+  border: 1px solid  rgb(142, 111, 172);
+  background-color: white;
+  padding: 20px 10px;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: 600ms;
+  background-color: rgb(140, 80, 196);
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.buttons button:hover {
+  background-color: rgb(126, 57, 190);
+  color: white;
 }
